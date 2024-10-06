@@ -1,0 +1,9 @@
+<div class="container">
+    <h2 class="text-center">Task Form</h2>
+    <label for="title">Task Name</label>
+    <input name="title" #Title type="text" class="form-control" placeholder="Task Title">
+    <label for="desc">Task Description</label>
+    <textarea name="desc" #Description class="form-control" placeholder="Task Description"></textarea>
+    <button class="save-button btn btn-success" (click)="saveTask(Title, Description)">Save</button>
+    <a class="btn btn-danger" routerLink="/">Cancel</a>
+</div>
